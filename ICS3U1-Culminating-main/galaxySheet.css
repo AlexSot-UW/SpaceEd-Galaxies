@@ -1,0 +1,79 @@
+.root {
+	-fx-background-color: #000000;
+}
+.propertiesBox {
+    -fx-background-color: #435454;
+    -fx-padding: 15;
+}
+.propertiesBoxButtons{
+    -fx-text-fill: #e1f2f2;
+    -fx-font-size: 15;
+    -fx-background-color: #435454;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1.5 1.5 1.5 1.5;
+}
+.propertiesBoxButtons: hover{
+    -fx-text-fill: #8a948c;
+    -fx-font-size: 15;
+    -fx-background-color: #d3ded6;
+    -fx-border-color: #f1f1f1;
+    -fx-border-width: 1.5 1.5 1.5 1.5;
+}
+.propertiesBoxButtons: selected{
+    -fx-text-fill: #fffff1;
+    -fx-font-size: 15;
+    -fx-background-color: #d3ded6;
+    -fx-border-color: #f1f1f1;
+    -fx-border-width: 1.5 1.5 1.5 1.5;
+}
+.tree-cell{
+    -fx-text-fill: #e1f2f2;
+    -fx-font-size: 19;
+    -fx-background-color: #435454;
+    -fx-padding: 5;
+}
+.tree-cell .tree-disclosure-node .arrow{
+    -fx-background-color: rgba(228, 228, 228, 228);
+}
+.tree-cell:selected{
+    -fx-text-fill: #e1f2f2;
+    -fx-font-size: 21;
+    -fx-border-color: #47b3b5;
+    -fx-border-width: 0 3 3 0;
+    -fx-background-color: #697a7a;
+    -fx-padding: 5;
+}
+.tree-cell:hover{
+    -fx-font-size: 19;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 0 3 3 0;
+    -fx-background-color: #697a7a;
+    -fx-padding: 5;
+}
+.styledText{
+    -fx-padding: 20;
+    -fx-text-fill: #ffff1f;
+    -fx-font-size: 15;
+    -fx-text-alignment: center;
+    -fx-background-color: #4f5c6e;
+    -fx-border-color: #47b3b5;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-radius: 10;
+}
+.styledText2{
+    -fx-padding: 8 15 15 15;
+    -fx-text-alignment: center;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: #696458;
+    -fx-font-size: 15;
+}
+.bottomText{
+    -fx-border-color: #000000;
+    -fx-text-fill: #f1f1f1;
+    -fx-border-width: 3 3 3 3;
+    -fx-padding: 10 10 10 10;
+}
+.titleText{
+	-fx-font-size: 30;
+}

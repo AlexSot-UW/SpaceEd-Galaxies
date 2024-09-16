@@ -1,0 +1,27 @@
+-Dbinary.css=false
+
+ClassLoader tccl = Thread.currentThread().getContextClassLoader();
+        try {
+            final ClassLoader resourcesClassLoader = Resourceloader.class.getClassLoader();
+        //needed for css
+        Thread.currentThread().setContextClassLoader(resourcesClassLoader);
+        this.primaryStage.show();
+    } finally {
+        Thread.currentThread().setContextClassLoader(tccl);
+    }
+
+
+
+        InputStream inputStream = MainApp.class.getResourceAsStream("/styles/styles.css");
+        File tempStyleSheetDest = File.createTempFile("javafx_stylesheet", "");
+        tempStyleSheetDest.deleteOnExit();
+        Files.copy(inputStream, tempStyleSheetDest.toPath(), StandardCopyOption.REPLACE_EXISTING);
+        scene.getStylesheets().add(tempStyleSheetDest.toURI().toString());
+
+
+
+
+@charset  "ISO-8859-1";
+.image1 { -fx-background-color: #ff0000; }
+.treeView { }
+#font-button { fx-background-color: #ff0000; }
